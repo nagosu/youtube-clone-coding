@@ -1,43 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Youtube</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/467c5af803.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
   </head>
-
   <body>
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <i class="fa-brands fa-youtube"></i>
-        <a href="">Youtube</a>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
       </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
 
-      <ul class="navbar__icons">
-        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        <li><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+    <!-- Video Player -->
+    <section class="player">
+      <video controls src="ost.mp4"></video>
+    </section>
+
+    <!-- Video Info -->
+    <section class="info">
+      <!-- Metadata -->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#OurBelovedSummer</li>
+          <li>#OST</li>
+          <li>#KoreanLyrics</li>
+        </ul>
+        <div class="titleAndButton">
+          <span class="title">
+            그 해 우리는 OST 모음 (가사포함) | Our Beloved Summer OST Playlist (Korean Lyrics) | 유튜브 클론 코딩 | 공부할 때 이거 들으면서 하면 공부잘됨 | 공부 열심히 해야징~
+          </span>
+          <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+        </div>
+        <span class="views">조회수 123,456,789회</span>
+      </div>
+      <!-- Actions -->
+      <ul class="actions">
+        <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
+        <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+        <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+        <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+        <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
       </ul>
-    </nav>
-
-    <iframe class="video" src="https://www.youtube.com/embed/23tbIfAhP6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <ul class="hashtag">
-      <li><a href="">#그해우리는</a></li>
-      <li><a href="">#최웅</a></li>
-      <li><a href="">#국연수</a></li>
-    </ul>
-
-    <ul class="title">
-      <li><div>그 해 우리는 OST 모음 (가사포함) | Our Beloved Summer OST playlist (Korean Lyrics)</div></li>
-
-      <li><i class="fa-solid fa-caret-down"></i></li>
-    </ul>
+      <!-- Channel Description-->
+      <div class="channel">
+        <div class="metadata">
+          <img src="JJANG-GOO.png" alt="" />
+          <div class="info">
+            <span class="name">NAGOSU</span>
+            <span class="subscribers">123,456 subscribers</span>
+          </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
+    </section>
+    <section class="upNext">
+      <span class="title">Up Next</span>
+      <ul>
+        <li class="item">
+          <img src="ash_island.jpg" alt="" />
+          <div class="info">
+            <span class="title">오예진은 왜 애쉬아일랜드를 좋아하는걸까 도저히 이해가 안되구만~</span>
+            <span class="name">NAGOSU</span>
+            <span class="views">185,631 views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <img src="귀칼.jpg" alt="" />
+          <div class="info">
+            <span class="title">귀멸의 칼날 2기는 언제보는게 좋을까요 나는 귀칼에서 탄지로가 제일 멋있는 듯</span>
+            <span class="name">NAGOSU</span>
+            <span class="views">651,166 views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <img src="도라에몽.jpg" alt="" />
+          <div class="info">
+            <span class="title">앙앙앙 난 니가 정말 좋아 도라에몽~ 도라에몽 보니까 초코에몽 먹고싶당</span>
+            <span class="name">NAGOSU</span>
+            <span class="views">1,651,385 views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
